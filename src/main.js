@@ -1,11 +1,18 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-import './assets/main.css'
+import './assets/main.css';
+// import VueTailwind from 'vue-tailwind';
 
-const app = createApp(App)
+// const components = {
+//   //...
+// };
 
-app.use(router)
 
-app.mount('#app')
+// app.use(VueTailwind, components);
+const app = createApp(App);
+
+app.use(router);
+
+app.mount('#app');
